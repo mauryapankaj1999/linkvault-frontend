@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card-lift:hover {
+  box-shadow: 0 45px 32px -10px rgba(10, 17, 26, 0.18);
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(#142840) 22%, transparent);
+  /* box-shadow: 0 28px 40px -20px color-mix(in oklab, var(--ink) 35%, transparent); */
+}
